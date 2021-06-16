@@ -40,7 +40,7 @@ library(prismatic)
 
 # random minimal tileplot
 crossing(
-    x = LETTERS %>% extract(1:4),
+    x = LETTERS %>% magrittr::extract(1:4),
     y = 5:8
 ) %>% 
     mutate(z = runif(16)) %>% 
